@@ -1,0 +1,24 @@
+#### /opt/worker.log
+
+####python2.7 client.py -u ws://localhost:8080/client/ws/speech -r 32000 1038_1.wav not used
+
+### python -m SimpleHTTPServer   //deprecate
+
+#### python3 -m http.server   //deprecate
+
+ws://localhost:8080/client/ws/speech
+
+ws://localhost:8080/client/ws/status
+
+###################################################
+
+docker run -it -p 8080:80 -v /Users/Mix_Tera/Desktop/model:/opt/models jcsilva/docker-kaldi-gstreamer-server:latest /bin/bash
+
+/opt/start.sh -y /opt/models/sample_nnet2.yaml
+
+cd Desktop/K2 
+
+http-server -p 8000
+
+http://localhost:8000/demos/mmob.html
+
